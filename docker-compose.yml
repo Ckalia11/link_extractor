@@ -1,6 +1,6 @@
 services:
   api:
     image: ckalia/linkextractor:v2
-    build: ./src/api
+    build: ./api
     ports:
       - 5000:5000
