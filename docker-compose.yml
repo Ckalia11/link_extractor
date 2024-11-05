@@ -6,3 +6,11 @@ services:
       - 5000:5000
     volumes:
       - ./api/main.py:/app/main.py
+  web:
+    image: php:7-apache
+    ports:
+      - 80:80
+    environment:
+      - API_ENDPOINT=http://api:5000/api/
+    volumes:
+      - ./web:/var/www/html
