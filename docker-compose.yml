@@ -1,13 +1,14 @@
 services:
   api:
-    image: ckalia/linkextractor:v2
+    image: ckalia/linkextractor-api
     build: ./api
     ports:
       - 5000:5000
     volumes:
       - ./api/main.py:/app/main.py
   web:
-    image: php:7-apache
+    image: ckalia/linkextractor-web
+    build: ./web
     ports:
       - 80:80
     environment:
