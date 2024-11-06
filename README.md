@@ -11,4 +11,4 @@ A project that scrapes links from webpages
 
 # Notes
 
-- Responses are cached using redis. You can check if a particular url hit the cache by checking the `logs` folder
+- Responses are cached using redis. You can check if a url hit the cache by checking the `api/logs` folder which will get created
