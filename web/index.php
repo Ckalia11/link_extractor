@@ -178,9 +178,7 @@
     <?php endif; ?>
 
     <div class="footer">
-      <p><a href="https://github.com/ibnesayeed/linkextractor">Super Link Extractor</a> by <a href="https://twitter.com/ibnesayeed">@ibnesayeed</a> from
-        <a href="https://ws-dl.cs.odu.edu/">WS-DL, ODU</a>
-      </p>
+      <p>Super Link Extractor</p>
     </div>
   </body>
 </html>

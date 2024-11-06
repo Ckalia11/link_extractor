@@ -1,4 +1,3 @@
 api/__pycache__/
 .vscode/
-git_auto.sh
-push_to_hub.sh
+api/logs/cache_hits.log
