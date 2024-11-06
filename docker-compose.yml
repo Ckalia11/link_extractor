@@ -1,6 +1,6 @@
 services:
   api:
-    image: ckalia/linkextractor-api
+    image: linkextractor-api
     build: ./api
     environment:
       - REDIS_URL=redis://redis:6379
@@ -9,7 +9,7 @@ services:
     volumes:
       - ./api/logs:/app/logs
   web:
-    image: ckalia/linkextractor-web
+    image: linkextractor-web
     build: ./web
     ports:
       - 80:80
