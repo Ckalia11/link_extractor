@@ -7,7 +7,7 @@ services:
     ports:
       - 5000:5000
     volumes:
-      - ./api/main.py:/app/main.py
+      - ./api/logs:/app/logs
   web:
     image: ckalia/linkextractor-web
     build: ./web
@@ -15,7 +15,5 @@ services:
       - 80:80
     environment:
       - API_ENDPOINT=http://api:5000/api/
-    volumes:
-      - ./web:/var/www/html
   redis:
     image: redis
